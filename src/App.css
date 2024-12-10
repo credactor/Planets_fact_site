@@ -1,0 +1,193 @@
+body {
+  background-color: rgb(6, 5,36);
+  color:white;
+}
+
+#root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+#siteName {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+#viewButtons {
+  max-width: inherit;
+  margin-bottom: 1rem;
+}
+
+#basic-button {
+  font-size: xx-large;
+}
+
+#picture {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Button:hover {
+  background-color:darkslateblue;
+}
+
+a:hover {
+  color: #686ff5;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+#head {
+  display: flex;
+  flex-direction: row;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#wiki {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#name {
+  text-transform: uppercase;
+}
+
+#datum {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.dataCard {
+  display: flex;
+  flex-direction: row;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: darkgrey;
+}
+
+@media screen and (max-width: 6000px) {
+  #compactMenu {
+    display: none;
+  }
+  #viewHeader {
+    display: none;
+  }
+  #viewButtons {
+    display: flex;
+  }
+  #head {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #main {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+  #wiki {
+    flex-direction: column;
+    width: 40%;
+  }
+  #picture {
+    justify-content: center;
+  }
+  #datum {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }  
+  .dataCard {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #compactMenu {
+    display: none;
+  }
+  #viewHeader {
+    display: none;
+  }
+  #viewButtons {
+    display: flex;
+    width: 40%;
+  }
+  #main {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wiki {
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #info {
+    width: 57%;
+  }
+  #picture {
+    justify-content: center;
+  }
+  #datum {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }  
+  .dataCard {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tabHeader {
+    display: none;
+  }
+  #viewButtons {
+    display: none;
+  }
+  #compactMenu {
+    display: inherit;
+  }
+  #viewHeader {
+    display: inherit;
+  }
+  #head {
+    justify-content: space-between;
+  }
+  #datum {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }  
+  .dataCard {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.3rem;
+  }
+  #info {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
