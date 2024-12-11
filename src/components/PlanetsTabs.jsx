@@ -60,7 +60,7 @@ export const PlanetsTabs = ({planetList, planetIndex, onChange}) => {
         <div id='picture'>
           {/* <img src={"./src" + planets[currentPlanetIndex].images[imageViews[currentPlanetView]]. */}
           <img src={planets[currentPlanetIndex].images[imageViews[currentPlanetView]].
-            slice(1)} alt={planets[currentPlanetIndex].name+' picture'}/>
+            slice(9)} alt={planets[currentPlanetIndex].name+' picture'}/>
         </div>
         <div id='wiki'>
         <div id='info'>
